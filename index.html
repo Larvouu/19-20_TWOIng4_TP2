@@ -9,38 +9,38 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<!-- class container, puis row, puis col-->
-	<body> <!-- centre automatiquement tout le body -->
-		<div class="container">
-			<div class="row">
-				<header>
-					<div class="wrapper">
-						<div class="col-sm">
-							<div class="logo-search">
-									
-								<img class="pull-left" src="img/logo.png" />
-							</div>
-						</div>
-
-						<div class="col-sm">
-							<form method="POST" action="index.html">
-								<input type="search" required class="search">
-								<input type="submit" name="submit" value="Rechercher" class="submit">
-							</form>
-						</div>
-						<div class="col-sm">
-							<div class="user">
-								<a href="#">Luke Chesser</a>
-							</div>
+	<body > <!-- centre automatiquement tout le body -->
+		<header>
+			<div class="container">
+				<div class="row" id="wrapper">
+					<div class="col-2">
+						<div class="logo-search">
+								
+							<img class="pull-left" src="img/logo.png" />
 						</div>
 					</div>
-				</header>
+
+					<div class="col-3">
+						<form method="POST" action="index.html">
+							<input type="search" required class="search">
+							<input type="submit" name="submit" value="Rechercher" class="submit">
+						</form>
+					</div>
+					<div class="col-sm">
+						<div class="user">
+							<a href="#">Luke Chesser</a>
+						</div>
+					</div>
+				</div>
 			</div>
+		</header>
 		
 	
+		<div class="container">
 			<div class="row">
 				<div class="col">
 					<aside>
-						<h3>Browse</h3>
+						<p class="hx">Browse</p>
 						<nav class="browse">
 							<ul class="main">
 								<li><a class="heavy" href="#">Heavy Rotation</a></li>
@@ -49,7 +49,7 @@
 								<li><a class="new" href="#">New Releases</a></li>
 							</ul>
 						</nav>
-						<h3>Your music</h3>
+						<p class="hx">Your music</p>
 						<nav class="music">
 							<ul class="main">
 								<li><a class="collection" href="#">Collection</a></li>
@@ -70,7 +70,7 @@
 								</div>
 								<div class="col-sm">
 									<div class="name">
-										<h1>Luke Chesser</h1>
+										<p id="h1">Luke Chesser</p>
 										<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
 									</div>
 								</div>
@@ -101,7 +101,7 @@
 
 						<div class="row">
 							<div class="col">
-								<h2>Top Album</h2>
+								<p id="h2">Top Album</p>
 							</div>
 							<div>
 								<div class="col">
