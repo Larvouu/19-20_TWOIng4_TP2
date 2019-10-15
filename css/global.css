@@ -206,6 +206,10 @@ input.submit {
     margin-left: 5px;
 }
 
+#luk{
+    color:#828c92;
+}
+
 nav.browse a, nav.music a {
     padding-left: 20px;
     padding-top: 2px;

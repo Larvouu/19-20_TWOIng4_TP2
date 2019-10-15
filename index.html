@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
 		<title>Rdio - Luke Chesser</title>
 
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
-		<!-- ajout de boostrap = copier coller cette ligne -->
+		<!-- ajout de boostrap = copier coller cette ligne qui suit : -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<!-- class container, puis row, puis col-->
-	<body > <!-- centre automatiquement tout le body -->
+	<body > 
 		<header>
-			<div class="container">
+			<div class="container"> <!-- centre automatiquement tout le div -->
 				<div class="row" id="wrapper">
 					<div class="col-2">
 						<div class="logo-search">
@@ -28,7 +35,16 @@
 					</div>
 					<div class="col-sm">
 						<div class="user">
-							<a href="#">Luke Chesser</a>
+								<div class="dropdown" >
+									<button class="btn btn-white dropdown-toggle" type="button" id="luk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Luke Chesser
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#"><img src="img/pencil.jpg"/> Edit my profil</a>
+										<a class="dropdown-item" href="#"><img src="img/logOut.png"/> Logout</a>
+									</div>
+								</div>
+								<div class="dropdown">
 						</div>
 					</div>
 				</div>
@@ -38,26 +54,24 @@
 	
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<aside>
-						<p class="hx">Browse</p>
-						<nav class="browse">
-							<ul class="main">
-								<li><a class="heavy" href="#">Heavy Rotation</a></li>
-								<li><a class="recent" href="#">Recent Activity</a></li>
-								<li><a class="top" href="#">Top Charts</a></li>
-								<li><a class="new" href="#">New Releases</a></li>
-							</ul>
-						</nav>
-						<p class="hx">Your music</p>
-						<nav class="music">
-							<ul class="main">
-								<li><a class="collection" href="#">Collection</a></li>
-								<li><a class="history" href="#">History</a></li>
-							</ul>
-						</nav>
-					</aside>
-				</div>
+				<aside class="d-none d-md-block ">
+					<p class="hx">Browse</p>
+					<nav class="browse">
+						<ul class="main">
+							<li><a class="heavy" href="#">Heavy Rotation</a></li>
+							<li><a class="recent" href="#">Recent Activity</a></li>
+							<li><a class="top" href="#">Top Charts</a></li>
+							<li><a class="new" href="#">New Releases</a></li>
+						</ul>
+					</nav>
+					<p class="hx">Your music</p>
+					<nav class="music">
+						<ul class="main">
+							<li><a class="collection" href="#">Collection</a></li>
+							<li><a class="history" href="#">History</a></li>
+						</ul>
+					</nav>
+				</aside>
 
 				<div class="col-10">
 					<main>
@@ -88,7 +102,7 @@
 									</div>
 									
 									<div class="links">
-										<div class="col">
+										<div class="col col-xs-block col-sm-block">
 											<div>
 												<a href="#">Collection</a>
 												<a href="#">History</a>
@@ -113,7 +127,7 @@
 						la section dynamique
 						-->
 						<section id="albums">
-							<div class="row bloc"> <!-- -->
+							<div class="row"> 
 								<article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
 									<figure>
 										<img src="img/album/album_01.png" />
